@@ -7,7 +7,7 @@ void Separar(cola *Q, Vector V){
 float t;
 int k;
 while (!Vacia (Q)){
-    t=pop(Q);
+    t=Extraer(Q);
     k=t;
     Agregar(V[k],t);}
 }
@@ -21,10 +21,10 @@ void Contar (Vector V, Arreglo A){
   for (i=0;i<40;i++){
     A[i]=0;
     while (!Vacia (V[i])){
-      push(C,pop(V[i]));
+      Agregar(C,Extraer(V[i]));
       A[i]++;}
     while (!Vacia(C)){
-      push(V[i],pop(C));
+      Agregar(V[i],Extraer(C));
     }
   }
 }  
