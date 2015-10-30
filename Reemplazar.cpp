@@ -2,7 +2,7 @@
 
 void Reemplazar(pila P,int nuevo,int viejo)
 {
-  pila Q;
+  stack Q;
   int aux;
 
   /*Creamos una pila auxiliar para almacenar enteros*/
