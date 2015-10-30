@@ -10,7 +10,7 @@ void Reemplazar(pila P,int nuevo,int viejo)
 
   /*Vamos sacando elementos de P y los vamos metiendo en Q*/
   /*excepto en el caso de sacar viejo,que insertamos nuevo*/
-  while (!VaciaPila(P)){
+  while (!Empty(P)){
     Tope(&aux,P);
     if (aux==viejo)
        Push(&nuevo,Q);
