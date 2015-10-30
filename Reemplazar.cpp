@@ -30,3 +30,4 @@ void Reemplazar(pila P,int nuevo,int viejo)
   /*para la pila auxiliar Q*/
 
   DestruirPila(Q);
+}
